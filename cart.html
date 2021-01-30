@@ -98,6 +98,18 @@
                             <td class="cartdelete_bt">操 作</td>
                         </tr>
                         <tr>
+                            <td class="cartname_td" style="text-align:left; padding-left:15PX;"><a href="#" class="name_text">2020-2021全国广播电视编辑记者播音员主持人资格考试：广播电视业务+广播电视基础知识+广播电视综合知识(共3本)</a></td>
+                            <td class="cartprice_td">￥172元</td>
+                            <td class="cartamount_td">
+                            <span class="sp_price" style="display:none;">172</span> 
+                             <a class="buy_del" href="#">-</a>
+                             <input type="hidden" name="CartID" id="CartID" value="79632">
+                             <input id="buy_num" name="buy_num_79632" style="text-align:center" value="1" class="amount_input">
+                             <a class="buy_add" href="#">+</a>
+                            </td>
+                            <td class="cartdelete_td"><a href="#" class="book_del">删 除</a></td>
+                           </tr>
+                        <tr>
                             <td class="carttotal_td" colspan="4">订单金额：
                                 <span id="total">0.00</span>
                             </td>
@@ -206,16 +218,5 @@
 <script src="js/machine.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/index.js"></script>
-<script>
-    function addToShopCar(){
-    var goodsinfo = {
-        id: 商品的id,
-        count: 要购买的数量,
-        price: 商品的单价,
-        selected: true,
-    };
-    this.$store.commit("addToCar", goodsinfo);
-}
-</script>
 
 </html>
