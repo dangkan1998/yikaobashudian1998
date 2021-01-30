@@ -1247,5 +1247,18 @@
 <script src="js/machine.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+	$.get("getGoodsType.php",function(data){
+		let objs = JSON.parse(data);
+		let htmlStr="";
+		objs.forEach(function(item){
+			htmlStr+=`<option value="${item.typeId}" >${item.goodsType}</option>`;
+		});
+		$("#typeId").html(htmlStr);
+	});
 
+});
+</script>
 </html>

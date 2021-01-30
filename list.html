@@ -1925,5 +1925,18 @@
 </body>
 <script src="js/index.js"></script>
 <script src="js/sidebar.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+    $.get('getMaxTypeId.php',function(data){
+        let maxTypeId = "001";
+        if(data!=""){
+            let str = "00"+(parseInt(data)+1);
+            maxTypeId = str.substr(str.length-3,3);
+        }
+        $("#typeId").val(maxTypeId);
+    });
 
+});
+</script>
 </html>
