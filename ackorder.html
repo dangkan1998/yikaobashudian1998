@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>易考吧书店确认订单</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styleackorder.css">
+</head>
+
+<body>
+    <!-- 头部，登录注册购物车跳转 -->
+    <div id="head">
+        <div class="head-con">
+            <!-- 登录注册 -->
+            <li class="head-left">
+                您好！欢迎来到易考吧书城！
+                <a href="login.html" class="login">[请登录]</a>
+                <a href="registration.html" class="register">[免费注册]</a>
+            </li>
+            <!-- 购物车等 -->
+            <li class="head-right">
+                <a href="index.html" class="ind">易考吧首页</a>
+                <img src="images/cart.png" class="cartimg">
+                <a href="cart.html" class="cart">购物车(0)</a>　|
+                <img src="images/person.png" class="personimg">
+                <a href="#" class="order">我的订单</a>　|
+                <img src="images/star.gif" class="starimg">
+                <a href="#" class="collect" title="易考吧书城">收藏易考吧</a>
+            </li>
+        </div>
+    </div>
+    <!-- （结束）头部，登录注册购物车跳转 -->
+    <!-- logo 搜索框等 -->
+    <div id="logo">
+        <div class="logo-con">
+            <!-- logo -->
+            <h1 class="log">
+                <img src="images/logo.png">
+            </h1>
+            <!-- 搜索+导航 -->
+            <div class="search_nav">
+                <!-- 搜索 -->
+                <form class="search">
+                    <img src="images/seaimg.png" class="seaimg">
+                    <input class="search1" name="keyword" placeholder="搜索您感兴趣的书籍" type="text">
+                    <a class="sea">书籍搜索</a>
+                </form>
+                <!-- 导航1 -->
+                <p class="navigation">
+                    <a class="blue" href="#" target="_blank">二级建造师</a>
+                    <a href="#" target="_blank">公务员</a>
+                    <a href="#" target="_blank">执业医师</a>
+                    <a href="#" target="_blank">会计师</a>
+                    <a href="#" target="_blank">高考</a>
+                    <a href="#" target="_blank">采购师</a>
+                    <a href="#" target="_blank">事业单位</a>
+                    <a class="blue" href="#" target="_blank"> 造价工程师</a>
+                    <a class="orange" href="#" target="_blank">职称英语</a>
+                </p>
+            </div>
+            <div class="phone">
+                <img src="images/phone.png">
+            </div>
+        </div>
+    </div>
+    <!-- （结束）login 搜索框等 -->
+    <!-- 导航2 -->
+    <div id="navtwo">
+        <div class="navtwo-con">
+            <a href="index.html">首　页</a>
+            <a href="#">资格类</a>
+            <a href="#">工程类</a>
+            <a href="#">财经类</a>
+            <a href="#">招录类</a>
+            <a href="#">医学类</a>
+            <a href="#">外语类</a>
+            <a href="#">学历类</a>
+            <a href="#">外贸类</a>
+            <a href="#">计算机类</a>
+        </div>
+    </div>
+    <!-- （结束）导航2 -->
+
+    <!--购物车-->
+    <div class="cart_process02"></div>
+    <div class="orderinfo_topbg">确认订单信息</div>
+    <div class="orderinfo_center">
+        <form id="form_checkout" name="form_checkout" method="post" action="checkout_confirm.asp" onsubmit="return checkForm()">
+            <div class="orderinfo_table">
+                <div class="orderinfo_bt">商品清单</div>
+                <table cellspacing="0" cellpadding="0" class="book_btbg">
+                    <tr>
+                        <td class="cartname_bt">商品名称</td>
+                        <td class="cartprice_bt">价 格</td>
+                        <td class="cartamount_bt">数 量</td>
+                        <td class="cartmoney_bt">小 计</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cartname_td" style="text-align:left; padding-left:15px;">
+                            <a href="#" class="name_text" target="_blank">2020-2021全国广播电视编辑记者播音员主持人资格考试：广播电视业务+广播电视基础知识+广播电视综合知识(共3本)</a>
+                        </td>
+                        <td class="cartprice_td">￥172元</td>
+                        <td class="cartamount_td">1</td>
+                        <td class="cartdelete_td">￥172元</td>
+                    </tr>
+
+                    <tr>
+                        <td class="carttotal_td" colspan="4">商品金额：
+                            <span style="color:#ff6600; font-size:14px;">￥172</span>
+                            <input type="hidden" name="total_price" value="172" id="total_price" />
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="orderinfo_bt2" id="member_info_title">会员信息</div>
+                <div class="info_table" id="member_info_content">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:10px; margin-bottom:10px;">
+                        <tr>
+                            <td class="td_left" style=" width:600px; text-align:left; padding-left:30px;">
+                                <span>如有账号请
+                                    <a href="#" style="color:#399">登录</a> 会员！没有账户请
+                                    <a href="#" style="color:#399">注册</a>
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="orderinfo_bt2">收货人信息</div>
+                <div class="info_table">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:20px; margin-bottom:30px;">
+                        <tr>
+                            <td colspan="4">
+                                <ul id="address_list">
+
+                                </ul>
+                                <div style=" clear:both; width:95%; margin:0 auto; height:10px;border-bottom: dashed #599bd1 1px;"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" class="td_left" style="width:230px;">
+                                <span>*</span>收货人姓名：</td>
+                            <td class="td_right">
+                                <input type="text" id="receiver_name" onblur="setBorderBG(this)" name="receiver_name" class="order_name"
+                                    value="" />
+                            </td>
+                            <td class="td_left">收货人性别：</td>
+                            <td class="td_else">
+                                <input type="radio" name="sex" value="先生" id="sex1" class="radio">
+                                <label for="sex1">男</label>
+                                <input type="radio" style="margin-left:20px;" name="sex" id="sex0" value="女士" class="radio">
+                                <label for="sex0">女</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                <span>*</span>收货人地址：</td>
+                            <td class="td_right" colspan="3">
+                                <input type="text" id="receiver_address" onblur="setBorderBG(this)" name="receiver_address" class="order_address"
+                                    value="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">
+                                <span>*</span>收货人手机：</td>
+                            <td class="td_right">
+                                <input type="text" name="receiver_tel" onblur="setBorderBG(this)" id="receiver_tel" class="order_name"
+                                    value="" />
+                            </td>
+                            <td class="td_left">收货人邮编：</td>
+                            <td class="td_else">
+                                <input type="text" name="receiver_postcode" id="receiver_postcode" class="order_name" value=""
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">收货人邮箱：</td>
+                            <td class="td_right">
+                                <input type="text" name="receiver_email" id="receiver_email" class="order_name" value="" />
+                            </td>
+                            <td class="td_left">收货人QQ：</td>
+                            <td class="td_else">
+                                <input type="text" name="receiver_qq" class="order_name" value="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">地址类别：</td>
+                            <td class="td_else">
+                                <input type="radio" name="address_type" id="address_type1" value="家庭住址" checked="checked" class="radio">
+                                <label for="address_type1">家庭住址</label>
+                                <input type="radio" name="address_type" style="margin-left:20px;" id="address_type2"
+                                    value="单位住址" class="radio">
+                                <label for="address_type2">单位住址</label>
+                            </td>
+                            <td class="td_left"></td>
+                            <td class="td_right"> </td>
+                        </tr>
+
+                        <tr style="display:none">
+                            <td class="td_left">发货说明：</td>
+                            <td class="td_else" colspan="3">
+                                <input type="radio" name="deliver_desc" id="deliver_desc1" value="需邮件通知" checked="" class="radio" style=" margin-left:11px;">
+                                <label for="deliver_desc1">需邮件通知</label>
+                                <input type="radio" name="deliver_desc" id="s" value="需QQ通知" class="radio">
+                                <label for="deliver_desc2">需QQ通知</label>
+                                <input type="radio" name="deliver_desc" id="deliver_desc3" value="无通知,直接发货" checked="" class="radio">
+                                <label for="deliver_desc3">无通知,直接发货</label>
+                                <input type="radio" name="deliver_desc" id="deliver_desc4" value="需要用手机短信息通知（免费）" checked="" class="radio">
+                                <label for="deliver_desc4">需要用手机短信息通知（免费）</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left">简单留言：</td>
+                            <td class="td_else" colspan="3">
+                                <textarea name="simple_message" class="order_textarea"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <table cellspacing="0" cellpadding="0" class="book_btbg" style="margin-top:20px; background:#f2f7ff;border:solid #599bd1 1px;">
+                    <tr>
+                        <td class="carttotal_total_td" style="margin-right:10px;">配送方式：
+                            <select name="deliver_style" id="deliver_style" onchange="GetFreight();" class="order_select">
+
+                                <option value="1">快递邮寄(全国)[15元/单]</option>
+
+                                <option value="2">城际快递[30元/单]</option>
+
+                                <option value="3">邮政EMS(偏远地区)[45元/单]</option>
+
+                                <option value="4">送书上门(广东)[30元/单]</option>
+
+                                <option value="5">送书上门(深圳)[30元/单]</option>
+
+                            </select>&nbsp;&nbsp;</td>
+                        <td class="carttotal_total_td" style="width:80px; text-align:left; font-weight:bold;">
+                            <span id="freight_span_id" style="color:#ff6600; font-size:16px;">￥15</span>
+                        </td>
+                    </tr>
+
+                </table>
+                <table cellspacing="0" cellpadding="0" class="book_btbg" style="margin-top:20px; background:#f2f7ff;border:solid #599bd1 1px;">
+                    <tr>
+                        <td class="carttotal_total_td">商品金额：</td>
+                        <td class="carttotal_total_td" style="width:80px; text-align:left; font-weight:bold;">
+                            <span style="color:#ff6600; font-size:16px;">￥172</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="carttotal_total_td">运费：</td>
+                        <td class="carttotal_total_td" style="width:80px; text-align:left; font-weight:bold;">
+                            <span id="freight_span" style="color:#ff6600; font-size:16px;">￥15</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="carttotal_total_td">总计支付金额：</td>
+                        <td class="carttotal_total_td" style="width:80px; text-align:left; font-weight:bold;">
+                            <span id="total_price_span" style="color:#ff6600; font-size:16px;">￥187</span>
+                        </td>
+                    </tr>
+                </table>
+                <div class="submit">
+                    <input id="orderinfo_sub" class="orderinfo_sub" onmouseover="this.className='orderinfo_sub2'" onmouseout="this.className='orderinfo_sub'"
+                        type="submit" value="提交订单" onclick="">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="addcart_bottombg"></div>
+    <div class="clear"></div>
+    <div id="the_cover" class="cover"></div>
+    <div class="Popup" id="popwin" style="display:none">
+        <div class="PopupTitle">
+            <a href="#" target="_self" class="BtnClose" title="关闭"></a>登录/注册</div>
+        <div class="PopupCon">
+            <div class="LoginReg">
+                <div class="Login">
+                    <h2>已注册，请登录</h2>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <th scope="row">用户名：</th>
+                                <td>
+                                    <label for="cyLoginAccount"></label>
+                                    <input type="text" name="loginid" autocomplete="off" id="loginid" class="TextBox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">密码：</th>
+                                <td>
+                                    <input type="password" name="password" id="password" onkeypress="if(event.keyCode==13)CYLogin('cyLoginAccount','cyLoginPwd')"
+                                        class="TextBox">
+                                    <div class="Tips" style="display:none;">密码忘记了？
+                                        <a href="#" target="_self">点击立即找回&gt;&gt;</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">&nbsp;</th>
+                                <td>
+                                    <a href="#" class="BtnLogin">登　录</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="Reg">
+                    <h2>还没有注册？ </h2>
+                    <div>
+                        <input type="text" autocomplete="off" name="cyLoginUidMobile" id="cyLoginUidMobile" value="请输入手机号" onfocus="if(this.value=='请输入手机号')this.value=''"
+                            onblur="if(this.value=='')this.value='请输入手机号'" onkeypress="if(event.keyCode==13)MobileReg('cyRegMobile')"
+                            class="TextBox">
+                        <a href="#" target="_self" class="BtnReg">一键注册</a>
+                    </div>
+                    <div class="Tips">
+                        <span style="color: green; font-size: 11pt;">【注册说明】用户名和密码都是您填写的手机号！</span>
+                        <br>
+                        <span style="line-height: 20px; color: #888;">一键注册，主要是为确保您能及时享受本站服务以及便于查询已购买记录！请填写真实手机号！（注册后可随时修改密码！）</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login_pop" id="popwin2">
+        <div class="login_area_header">
+            <div id="loginClose" class="close_btn" onclick="colsePop()"></div>
+        </div>
+        <div class="login_content_wrapper">
+            <div class="login_content">
+                <div class="login_form">
+                    <div class="mail_form" style="padding-bottom:20px;">
+                        <div style="width:100%p; height:20px;"></div>
+                        <div class="login_form_line pop1_p" style="margin-top:0px;">
+                            <i class="mail_input_icon mail_icon"></i>
+                        </div>
+                        <div class="login_form_line pop9_p">
+                            <i class="pwd_input_icon pwd_icon"></i>
+                        </div>
+                        <div id="mail_login_error" class="login_error_msg">
+                        </div>
+                        <a href="#" style="color:#FFF;" class="btn btn_confirm btn_h36 btn_w250 login_btn">登录</a>
+                        <p style="line-height:25px; padding:0px; text-align:left; padding-left:30px;"></p>
+                    </div>
+
+                    <div class="third_login" style="display:none">
+                        使用第三方账号快速登录
+                        <a href="#" class="weibo_login"></a>
+                        <a href="#" class="qq_login"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Popup PopupMid" id="winCyRegSuccess" style="display: none; height:220px;">
+        <div class="PopupTitle">
+            <a href="#" target="_self" class="BtnClose" title="关闭"></a>登录/注册</div>
+        <div class="PopupCon">
+            <div class="RegSuccess">
+                <div class="Word" style="padding-bottom:10px;">
+                    <span class="Ico"></span>注册成功！</div>
+                <p style="line-height:30px; font-size:14px;">登录密码已默认为您的手机号，如需修改请点击“
+                    <a href="#" target="_blank">修改密码</a>”。</p>
+                <p>已为您自动登录，
+                    <span class="Time" id="regTime">-13</span>秒钟后将自动关闭此窗口</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom -->
+    <div id="bottom">
+        <div class="bottom-con">
+            <ul>
+                <li>
+                    <a href="#">新手指南</a>
+                    <br>
+                    <a href="#">购书流程</a>
+                    <br>
+                    <a href="#">付款方式</a>
+                </li>
+                <li>
+                    <a href="#">交易条款</a>
+                    <br>
+                    <a href="#">保密安全</a>
+                    <br>
+                    <a href="#">送货方式</a>
+                </li>
+                <li>
+                    <a href="#">商品销售</a>
+                    <br>
+                    <a href="#">售后服务</a>
+                    <br>
+                    <a href="#">适用法律</a>
+                    <br>
+                    <a href="#">版权声明</a>
+                </li>
+                <li>
+                    <a href="#">缺书登记</a>
+                    <br>
+                    <a href="#">联系我们</a>
+                    <br>
+                    <a href="#">关于书店</a>
+                </li>
+                <li>
+                    <a href="#">常见问题</a>
+                    <br>
+                    <a href="registration.html">免费注册</a>
+                    <br>
+                    <a href="#">工作时间</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- (结束)bottom -->
+    <!-- foot -->
+    <div id="foot">
+        <div class="foot-con">
+            <b>友情连接：</b>
+            <a href="#" target="_blank">易考宝典</a>
+            <a href="#" target="_blank">易考吧</a>
+            <a href="#" target="_blank">考试软件</a>
+            <a href="#" target="_blank">考试培训</a>
+            <a href="#" target="_blank">面授培训</a>
+            <a href="#" target="_blank">在线考试</a>
+            <a href="#" target="_blank">电气工程师</a>
+            <a href="#" target="_blank">电气智能工程师</a>
+            <a href="#" target="_blank">主任医师</a>
+            <a href="#" target="_blank">海船船员</a>
+            <a href="#" target="_blank">保荐人考试</a>
+            <a href="#" target="_blank">证券经纪人</a>
+            <a href="#" target="_blank">教师招聘</a>
+            <br>
+            <a href="#">网站合作</a> |
+            <a href="#">会员条款</a> |
+            <a href="#">隐私条款</a> |
+            <a href="#">友情链接</a> |
+            <a href="#">版权声明</a> |
+            <a href="#">联系我们</a>
+            <br> Copyright? 2005-2021 etest8.com All Rights Reserved [
+            <a href="#" target="_blank">粤ICP备09144611号</a>] 易考吧书店版权所有
+            <br> 公司地址：深圳市福田区红岭中路2065号南国大厦1栋6A-F 联系电话：0755-89335390 89335391 (上班时间)
+            <a href="#" title="51.La 网站流量统计系统" target="_blank">
+                <span>51La</span>
+            </a>
+        </div>
+    </div>
+    <!-- (结束)foot -->
+
+</body>
+<script src="js/machine.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>易考吧书店注册</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylereg.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="contain">
+            <div class="title">
+                <span class="tit">账号中心</span>
+            </div>
+            <div class="center">
+                <div class="cen">用户注册</div>
+            </div>
+            <div class="bottom">
+                <h3>
+                    <span class="icon"></span>
+                </h3>
+                <div class="boxform">
+                    <form class="form">
+                        <ul>
+                            <li>
+                                <font color="red"></font>
+                            </li>
+                            <li class="clearfix text_left">
+                                <span class="phone_left_txt">手机号码</span>
+                                <input type="text" id="regLoginName" onblur="MobileReg2('regLoginName')" name="regLoginName" class="user-name">
+                            </li>
+                            <li class="clearfix text_left">
+                                <span>真实姓名</span>
+                                <input type="text" id="username" name="username" class="user-name">
+                            </li>
+                            <li class="clearfix text_left">
+                                <span>密 码</span>
+                                <input type="password" id="password" name="password" class="user-name">
+                            </li>
+                            <li class="clearfix text_left">
+                                <span class="password_left_txt">重复密码</span>
+                                <input type="password1" id="qe_regPassword" name="qe_regPassword" class="user-name">
+                            </li>
+                            <li class="clearfix text_left">
+                                <span class="password_left_txt">验证码</span>
+                                <input type="text" id="reg_verifycode" name="reg_verifycode" class="user-name" style="width:80px;">
+                                <span class="yzmout">
+                                    <input type="button" value="发送验证码" class="yzm">
+                                </span>
+                            </li>
+                            <li>
+                            </li>
+                            <li class="next-btn">
+                                <span></span>
+                                <input type="submit" value="下一步" class="next-step">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>&nbsp;</p>
+    <div id="footermain">
+        <div class="footer">
+            <dl>
+                <dt></dt>
+                <dd class="sub">
+                    <a href="#">联系我们</a>
+                    <span>|</span>
+                    <a href="#">在线考试</a>
+                    <span>|</span>
+                    <a href="#">网上课堂</a>
+                    <span>|</span>
+                    <a href="#">帮助中心</a>
+                    <span>|</span>
+                    <a href="#">版权申明</a>
+                    <span>|</span>
+                    <a href="#">广告服务</a>
+                    <span>|</span>
+                    <a href="#">站点地图</a>
+                </dd>
+                <dd class="foot">
+                    <span class="phone" title="服务热线"> 联系方式：0755-89335390 89335391 </span>
+                    <span class="interval">|</span>
+                    <span>QQ:2480034530 2384047252</span>
+                    <span class="interval">|</span>
+                    <span>深圳市赛络科技有限公司</span>
+                </dd>
+                <dd class="copyright">
+                    <span>2005-2017易考吧版权所有 [粤ICP备09144611号]</span>
+                    <span class="interval">|</span>
+                    <span>CopyRight 2005-2017. 易考吧在线考试 All Rights Reserved</span>
+                    <a href="#" title="51.La 网站流量统计系统" target="_blank">
+                        <span class="la">51La</span>
+                    </a>
+                    <noscript>
+                        <a href="#" target="_blank">
+                            <img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src=""
+                            />
+                </dd>
+            </dl>
+        </div>
+    </div>
+</body>phone
+<script>
+    $(".next-step").click(function(){
+			let http = new XMLHttpRequest()
+			http.open("get",`http://192.168.1.12:8080/addUser?username=${$("#username").val()}&password=${$("#password").val()}`)
+			http.send()
+			http.onreadystatechange = function(){
+				if(http.readyState === 4){
+					if(http.responseText === "success"){
+						alert("注册新用户成功，点击去登录");
+						location.href = "http://10.35.161.176:81/login.html";
+					}
+					else{
+						alert("注册失败")
+					}
+				}
+			}
+		})
+</script>
+</html>

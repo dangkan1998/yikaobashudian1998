@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>易考吧书店登录</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylelogin.css">
+</head>
+
+<body>
+    <!-- 头部，登录注册购物车跳转 -->
+    <div id="head">
+        <div class="head-con">
+            <!-- 登录注册 -->
+            <li class="head-left">
+                您好！欢迎来到易考吧书城！
+                <a href="login.html" class="login">[请登录]</a>
+                <a href="registration.html" class="register">[免费注册]</a>
+            </li>
+            <!-- 购物车等 -->
+            <li class="head-right">
+                <a href="index.html" class="ind">易考吧首页</a>
+                <img src="images/cart.png" class="cartimg">
+                <a href="cart.html" class="cart">购物车(0)</a>　|
+                <img src="images/person.png" class="personimg">
+                <a href="#" class="order">我的订单</a>　|
+                <img src="images/star.gif" class="starimg">
+                <a href="#" class="collect" title="易考吧书城">收藏易考吧</a>
+            </li>
+        </div>
+    </div>
+    <!-- （结束）头部，登录注册购物车跳转 -->
+    <!-- logo 搜索框等 -->
+    <div id="logo">
+        <div class="logo-con">
+            <!-- logo -->
+            <h1 class="log">
+                <img src="images/logo.png">
+            </h1>
+            <!-- 搜索+导航 -->
+            <div class="search_nav">
+                <!-- 搜索 -->
+                <form class="search">
+                    <img src="images/seaimg.png" class="seaimg">
+                    <input class="search1" name="keyword" placeholder="搜索您感兴趣的书籍" type="text">
+                    <a class="sea">书籍搜索</a>
+                </form>
+                <!-- 导航1 -->
+                <p class="navigation">
+                    <a class="blue" href="#" target="_blank">二级建造师</a>
+                    <a href="#" target="_blank">公务员</a>
+                    <a href="#" target="_blank">执业医师</a>
+                    <a href="#" target="_blank">会计师</a>
+                    <a href="#" target="_blank">高考</a>
+                    <a href="#" target="_blank">采购师</a>
+                    <a href="#" target="_blank">事业单位</a>
+                    <a class="blue" href="#" target="_blank"> 造价工程师</a>
+                    <a class="orange" href="#" target="_blank">职称英语</a>
+                </p>
+            </div>
+            <div class="phone">
+                <img src="images/phone.png">
+            </div>
+        </div>
+    </div>
+    <!-- （结束）login 搜索框等 -->
+    <!-- 导航2 -->
+    <div id="navtwo">
+        <div class="navtwo-con">
+            <a href="index.html">首　页</a>
+            <a href="#">资格类</a>
+            <a href="#">工程类</a>
+            <a href="#">财经类</a>
+            <a href="#">招录类</a>
+            <a href="#">医学类</a>
+            <a href="#">外语类</a>
+            <a href="#">学历类</a>
+            <a href="#">外贸类</a>
+            <a href="#">计算机类</a>
+        </div>
+    </div>
+    <!-- （结束）导航2 -->
+
+    <!-- 登录 -->
+    <div id="login">
+        <div class="login-con">
+            <div class="logintop">
+                <img src="images/login_logo.png">
+                <span>我还没帐号，现在就
+                    <a href="registration.html" class="blue">注册</a>
+                </span>
+            </div>
+            <div class="loginbottom">
+                <form>
+                    <li>用户名：
+                        <input type="text" id="username" name="LoginName" class="login_name" placeholder="请输入用户名" value="">
+                    </li>
+                    <li>密　码：
+                        <input type="password" id="password" name="password" class="login_name" placeholder="请输入密码" value="">
+                    </li>
+                    <li>验证码：
+                        <input type="text" id="verifycode" name="verifycode" class="login_name" placeholder="请输入验证码" style="width:100px;" value="">
+                        <img src="images/yzm.bmp" id="verifycode_1" align="absmiddle">
+                        <span class="tip2">看不清？
+                            <a href="#" onclick="document.getElementById('verifycode_1').src='/inc/getcode.asp?sid='+Math.random(); return false;"
+                                style="text-decoration:underline;">换一张 </a>
+                        </span>
+                    </li>
+                    <li>
+                        <input class="loginbutton" 
+                            type="submit" value="立即登录">
+                        <a href="#">
+                            <span class="forget">忘记密码</span>
+                        </a>
+                    </li>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- （结束）登录 -->
+    <div class="clear"></div>
+
+
+    <!-- bottom -->
+    <div id="bottom">
+        <div class="bottom-con">
+            <ul>
+                <li>
+                    <a href="#">新手指南</a>
+                    <br>
+                    <a href="#">购书流程</a>
+                    <br>
+                    <a href="#">付款方式</a>
+                </li>
+                <li>
+                    <a href="#">交易条款</a>
+                    <br>
+                    <a href="#">保密安全</a>
+                    <br>
+                    <a href="#">送货方式</a>
+                </li>
+                <li>
+                    <a href="#">商品销售</a>
+                    <br>
+                    <a href="#">售后服务</a>
+                    <br>
+                    <a href="#">适用法律</a>
+                    <br>
+                    <a href="#">版权声明</a>
+                </li>
+                <li>
+                    <a href="#">缺书登记</a>
+                    <br>
+                    <a href="#">联系我们</a>
+                    <br>
+                    <a href="#">关于书店</a>
+                </li>
+                <li>
+                    <a href="#">常见问题</a>
+                    <br>
+                    <a href="registration.html">免费注册</a>
+                    <br>
+                    <a href="#">工作时间</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- (结束)bottom -->
+    <!-- foot -->
+    <div id="foot">
+        <div class="foot-con">
+            <b>友情连接：</b>
+            <a href="#" target="_blank">易考宝典</a>
+            <a href="#" target="_blank">易考吧</a>
+            <a href="#" target="_blank">考试软件</a>
+            <a href="#" target="_blank">考试培训</a>
+            <a href="#" target="_blank">面授培训</a>
+            <a href="#" target="_blank">在线考试</a>
+            <a href="#" target="_blank">电气工程师</a>
+            <a href="#" target="_blank">电气智能工程师</a>
+            <a href="#" target="_blank">主任医师</a>
+            <a href="#" target="_blank">海船船员</a>
+            <a href="#" target="_blank">保荐人考试</a>
+            <a href="#" target="_blank">证券经纪人</a>
+            <a href="#" target="_blank">教师招聘</a>
+            <br>
+            <a href="#">网站合作</a> |
+            <a href="#">会员条款</a> |
+            <a href="#">隐私条款</a> |
+            <a href="#">友情链接</a> |
+            <a href="#">版权声明</a> |
+            <a href="#">联系我们</a>
+            <br> Copyright? 2005-2021 etest8.com All Rights Reserved [
+            <a href="#" target="_blank">粤ICP备09144611号</a>] 易考吧书店版权所有
+            <br> 公司地址：深圳市福田区红岭中路2065号南国大厦1栋6A-F 联系电话：0755-89335390 89335391 (上班时间)
+            <a href="#" title="51.La 网站流量统计系统" target="_blank">
+                <span>51La</span>
+            </a>
+        </div>
+    </div>
+    <!-- (结束)foot -->
+
+</body>
+<script src="js/machine.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(".loginbutton").click(function () {
+            if ($("#remeber").checked) {
+                cookie.set("username", $("#username").value, 30)
+                cookie.set("password", $("#password").value, 30)
+            }
+            let http = new XMLHttpRequest()
+            http.open("get", `http://192.168.101.1:8080/login?username=${$("#username").val()}&password=${$("#password").val()}`)
+            http.send()
+            http.onreadystatechange = function () {
+                if (http.readyState === 4) {
+                    if (http.responseText === "success") {
+                        alert("登录成功");
+                        location.href = "index.html";
+                    }
+                    else {
+                        alert("用户名或密码错误")
+                    }
+                }
+            }
+        })
+        if (cookie.get("username") && cookie.get("password")) {
+            $("username").value = cookie.get("username");
+            $("password").value = cookie.get("password");
+        }
+</script>
+
+</html>
