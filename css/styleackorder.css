@@ -1,0 +1,455 @@
+body{
+    font-size:12px;
+}
+/* 头部，登录注册购物车跳转 */
+#head{
+    height:41px;
+    border-bottom:1px solid #d8d6d6;
+    border-top:1px solid #eee;
+    background:#f7f7f7;
+}
+.head-con{
+    width:1200px;
+    height:41px;
+    margin:0 auto;
+}
+/* 左边登录注册跳转 */
+#head .head-left{
+    width:600px;
+    line-height:41px;
+    font-size:12px;
+    float:left;
+}
+#head .login,#head .register{
+    color:#555;
+}
+/* 右边购物车等 */
+#head .head-right{
+    width:399px;
+    line-height:41px;
+    font-size:12px;
+    float:right;
+}
+#head .ind{
+    margin-right:10px;
+    color:#555;
+}
+#head .cartimg{
+    width:20px;
+    height:19px;
+}
+#head .cart{
+    margin-left:10px;
+    margin-right:5px;
+    color:#555;
+}
+#head .personimg{
+    width:19px;
+    height:21px;
+    margin-left:10px;
+}
+#head .order{
+    margin:0 9px;
+    color:#555;
+}
+#head .starimg{
+    width:15px;
+    height:15px;
+    margin-left:10px;
+}
+#head .collect{
+    margin-left:10px;
+    color:#555;
+}
+/* (结束)头部，登录注册购物车跳转 */
+/* login 搜索框等 */
+#logo{
+    height:102px;
+}
+.logo-con{
+    width:1200px;
+    height:102px;
+    margin:0 auto;
+    position: relative;
+}
+#logo .log{
+    width:200px;
+    height:85px;
+    line-height:102px;
+}
+#logo .search_nav{
+    width:608px;
+    height:102px;
+    position: absolute;
+    top:0;
+    left:307px;
+}
+#logo .search{
+    width:508px;
+    height:39px;
+    border:2px solid #1067a8;
+    border-right:98px
+    solid #1067a8;
+    margin-top:23px;
+}
+.search .seaimg{
+    width:20px;
+    height:20px;
+    margin-top:10px;
+    margin-left:14px;
+    float:left;
+}
+#logo .search .search1{
+    width:460px;
+    line-height:37px;
+    font-size:12px;
+    color:#b6b6b6;
+    position: absolute;
+    left:50px;
+    border:none;
+}
+#logo .search .sea{
+    font-size:16px;
+    color:#fff;
+    line-height:37px;
+    position: absolute;
+    right:17px;
+}
+/* 导航1 */
+.navigation{
+    font-size:12px;
+    margin-top:8px;
+}
+.navigation .blue{
+    color:#1067a8;
+}
+.navigation .orange{
+    color:#fd8712;
+}
+.navigation a{
+    color:#555;
+    margin-right:11px;
+}
+/* 联系电话 */
+#logo .phone{
+    width:200px;
+    height:55px;
+    position: absolute;
+    top:23px;
+    right:10px;
+}
+/*(结束) login 搜索框等 */
+/* 导航2 */
+#navtwo{
+    height: 40px;
+    background: #1b76b9;
+}
+.navtwo-con{
+    width: 1200px;
+    margin:0 auto;
+    font-weight: bold;
+}
+#navtwo a{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 115px;
+    text-align: center;
+    font-size: 14px;
+    color:#fff;
+}
+#navtwo a:hover{
+    background: #1067a8;
+}
+/* （结束）导航2 */
+.cart_process02{
+    background: url(../images/addcart_toptb02.png) no-repeat top center;
+    height: 49px;
+    width: 776px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.orderinfo_topbg{
+    background: url(../images/cart_topbg.png) no-repeat top center;
+    width: 1060px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 14px;
+    line-height: 33px;
+    left: 0;
+    right: 0;
+    margin-bottom: 0px;
+}
+.orderinfo_center{
+    border: solid #4182b6 3px;
+    border-top: none;
+    border-bottom: none;
+    width: 1054px;
+    margin: 0 auto;
+}
+.orderinfo_center .orderinfo_table {
+    width: 955px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.orderinfo_center .orderinfo_table .orderinfo_bt {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+    padding-bottom: 10px;
+}
+.orderinfo_center .orderinfo_table .book_btbg {
+    width: 100%;
+    border: solid #599bd1 1px;
+    border-right: none;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.orderinfo_center .orderinfo_table .book_btbg .cartname_bt {
+    background: #599bd1;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    height: 30px;
+    width: 565px;
+}
+.orderinfo_center .orderinfo_table .book_btbg .cartprice_bt,.orderinfo_center .orderinfo_table .book_btbg .cartamount_bt,.orderinfo_center .orderinfo_table .book_btbg .cartmoney_bt{
+    background: #599bd1;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    width: 130px;
+}
+.orderinfo_center .orderinfo_table .book_btbg .cartname_td .name_text {
+    color: #1b76b9;
+    font-size: 12px;
+    text-decoration: none;
+}
+.orderinfo_center .orderinfo_table .book_btbg .cartprice_td,.orderinfo_center .orderinfo_table .book_btbg .cartamount_td{
+    border: solid #599bd1 1px;
+    border-left: none;
+    border-top: none;
+    color: #ff6600;
+}
+.orderinfo_center .orderinfo_table .book_btbg .cartdelete_td {
+    border: solid #599bd1 1px;
+    border-left: none;
+    border-top: none;
+    color: #ff6600;
+}
+.orderinfo_center .orderinfo_table .book_btbg .carttotal_td {
+    width: 100%;
+    border: solid #599bd1 1px;
+    border-left: none;
+    border-top: none;
+    text-align: right;
+    padding: 15px 10px 15px 0px;
+    color: #1e1e1e;
+}
+.orderinfo_center .orderinfo_table .book_btbg .carttotal_td span {
+    font-weight: bold;
+}
+.orderinfo_center .orderinfo_table .orderinfo_bt2 {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+    padding-bottom: 10px;
+    margin-top: 18px;
+}
+.orderinfo_center .orderinfo_table .info_table {
+    border: solid #599bd1 1px;
+    width: 100%;
+}
+.orderinfo_center .orderinfo_table .info_table .td_left {
+    height: 50px;
+}
+.orderinfo_center .orderinfo_table .info_table .td_left span {
+    color: #ff0000;
+    vertical-align: top;
+    padding-right: 5px;
+    font-size: 12px;
+}
+.orderinfo_center .orderinfo_table .orderinfo_bt2 {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+    padding-bottom: 10px;
+    margin-top: 18px;
+}
+.orderinfo_center .orderinfo_table .info_table {
+    border: solid #599bd1 1px;
+    width: 100%;
+}
+.orderinfo_center .orderinfo_table .info_table .td_left {
+    text-align: right;
+    height: 50px;
+}
+.order_name {
+    background: #fff;
+    border: 1px solid #cccccc;
+    width: 190px;
+    height: 30px;
+    padding-left: 10px;
+    color: #555555;
+    margin-left: 10px;
+    vertical-align: middle;
+    line-height: 30px;
+}
+.orderinfo_center .orderinfo_table .info_table .td_left {
+    text-align: right;
+    width: 135px;
+    height: 50px;
+}
+.orderinfo_center .orderinfo_table .info_table .td_else {
+    text-align: left;
+    width: 465px;
+    height: 45px;
+}
+.orderinfo_center .orderinfo_table .info_table .td_else .radio {
+    margin: 0px 6px;
+    vertical-align: top;
+}
+.orderinfo_center .orderinfo_table .info_table .td_else .radio {
+    margin: 0px 6px;
+    vertical-align: top;
+}
+.order_address {
+    background: #fff;
+    border: 1px solid #cccccc;
+    width: 485px;
+    height: 30px;
+    padding-left: 10px;
+    color: #555555;
+    margin-left: 10px;
+    vertical-align: middle;
+    line-height: 30px;
+}
+.orderinfo_center .orderinfo_table .info_table .td_else {
+    text-align: left;
+    width: 465px;
+    height: 45px;
+}
+.order_textarea {
+    width: 392px;
+    height: 80px;
+    padding: 8px;
+    line-height: 170%;
+    margin-left: 10px;
+    color: #555555;
+    border: solid #cacaca 1px;
+    border-radius: 5px;
+    overflow: auto;
+    margin-top: 9px;
+}
+.orderinfo_center .orderinfo_table .book_btbg {
+    width: 100%;
+    text-align: center;
+}
+.carttotal_total_td {
+    text-align: right;
+    line-height: 30px;
+    color: #1e1e1e;
+}
+.order_select {
+    width: 165px;
+    padding: 1px 0px 1px 0px;
+    height: 22px;
+    outline: none;
+    margin-left: 10px;
+}
+option {
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.orderinfo_center .orderinfo_table .submit {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+.orderinfo_sub {
+    background: url(../images/login_sub01.png) no-repeat center;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    outline: medium none !important;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 新宋体;
+    margin: 0px 0px 20px 11px;
+}
+.addcart_bottombg {
+    background: url(../images/cart_bottombg.png) no-repeat top center;
+    width: 1060px;
+    height: 8px;
+    margin: 0 auto;
+}
+/* bottom */
+#bottom{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 45px;
+    font-size:12px;
+}
+.bottom-con{
+    width:1200px;
+    height:150px;
+    background:url(../images/bottombg.png) no-repeat top center;
+}
+.bottom-con li{
+    width: 240px;
+    float: left;
+    font-size: 12px;
+    padding-top: 3px;
+    text-align: center;
+    line-height: 170%;
+    color: #666;
+}
+.bottom-con a{
+    color:#555;
+}
+/* (结束)bottom */
+/* foot */
+#foot{
+    background:#f6f6f6;
+}
+.foot-con{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 230%;
+    padding: 25px 100px;
+    font-size:12px;
+}
+#foot b{
+    font-weight:bold;
+}
+#foot a{
+    color:#555;
+}
+#foot span{
+    display: inline-block;
+    background-color: #EF5350;
+    color: #fff;
+    padding: 2px 5px;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* (结束)foot */

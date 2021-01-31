@@ -1,0 +1,457 @@
+/* 头部，登录注册购物车跳转 */
+#head{
+    height:41px;
+    border-bottom:1px solid #d8d6d6;
+    border-top:1px solid #eee;
+    background:#f7f7f7;
+}
+.head-con{
+    width:1200px;
+    height:41px;
+    margin:0 auto;
+}
+/* 左边登录注册跳转 */
+#head .head-left{
+    width:600px;
+    line-height:41px;
+    font-size:12px;
+    float:left;
+}
+#head .login,#head .register{
+    color:#555;
+}
+/* 右边购物车等 */
+#head .head-right{
+    width:399px;
+    line-height:41px;
+    font-size:12px;
+    float:right;
+}
+#head .ind{
+    margin-right:10px;
+    color:#555;
+}
+#head .cartimg{
+    width:20px;
+    height:19px;
+}
+#head .cart{
+    margin-left:10px;
+    margin-right:5px;
+    color:#555;
+}
+#head .personimg{
+    width:19px;
+    height:21px;
+    margin-left:10px;
+}
+#head .order{
+    margin:0 9px;
+    color:#555;
+}
+#head .starimg{
+    width:15px;
+    height:15px;
+    margin-left:10px;
+}
+#head .collect{
+    margin-left:10px;
+    color:#555;
+}
+/* (结束)头部，登录注册购物车跳转 */
+/* login 搜索框等 */
+#login{
+    height:102px;
+}
+.login-con{
+    width:1200px;
+    height:102px;
+    margin:0 auto;
+    position: relative;
+}
+#login .log{
+    width:200px;
+    height:85px;
+    line-height:102px;
+}
+#login .search_nav{
+    width:608px;
+    height:102px;
+    position: absolute;
+    top:0;
+    left:307px;
+}
+#login .search{
+    width:508px;
+    height:39px;
+    border:2px solid #1067a8;
+    border-right:98px
+    solid #1067a8;
+    margin-top:23px;
+}
+.search .seaimg{
+    width:20px;
+    height:20px;
+    margin-top:10px;
+    margin-left:14px;
+    float:left;
+}
+#login .search .search1{
+    width:460px;
+    line-height:37px;
+    font-size:12px;
+    color:#b6b6b6;
+    position: absolute;
+    left:50px;
+    border:none;
+}
+#login .search .sea{
+    font-size:16px;
+    color:#fff;
+    line-height:37px;
+    position: absolute;
+    right:17px;
+}
+/* 导航1 */
+.navigation{
+    font-size:12px;
+    margin-top:8px;
+}
+.navigation .blue{
+    color:#1067a8;
+}
+.navigation .orange{
+    color:#fd8712;
+}
+.navigation a{
+    color:#555;
+    margin-right:11px;
+}
+/* 联系电话 */
+#login .phone{
+    width:200px;
+    height:55px;
+    position: absolute;
+    top:23px;
+    right:10px;
+}
+/*(结束) login 搜索框等 */
+/* 导航2 */
+#navtwo{
+    height: 40px;
+    background: #1b76b9;
+}
+.navtwo-con{
+    width: 960px;
+    padding-left: 240px;
+    margin:0 auto;
+    font-weight: bold;
+}
+#navtwo a{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 62px;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 13px;
+    color:#fff;
+}
+#navtwo a:hover{
+    background: #1067a8;
+}
+/* （结束）导航2 */
+
+/* 中间部分 */
+#center{
+    width:1200px;
+    position: relative;
+    margin:0 auto;
+    font-size:12px;
+    z-index: 99;
+}
+/* 侧导航 */
+#center .side{
+    width: 218px;
+    position: absolute;
+    left: 0px;
+    top: -40px;
+    background:#fff;
+    border: solid #e5e5e5 1px;
+}
+.side .sidetitle{
+    width:218px;
+    height:40px;
+    line-height:40px;
+    font-size:16px;
+    color:#fff;
+    background:#1067a8;
+}
+.side .sidetitle img{
+    margin-left:13px;
+    margin-right:9px;
+}
+/* 侧导航内容 */
+.sidenav{
+    font-size:12px;
+    padding-top:12px;
+    padding-bottom:3px;
+    padding-left:12px;
+    padding-right:44px;
+    line-height:24px;
+    border-bottom:1px dashed #e1e1e1;
+}
+.sidenav:hover{
+    background:#d4e9f9;
+    border-left:1px solid #1067a8;
+}
+.sidenav a{
+    color:#555;
+    display:inline-block;
+    margin-right:3px;
+}
+.sidenav .sidetit{
+    font-weight:bold;
+}
+.sidenav{
+    position: relative;
+}
+/* 侧导航鼠标以上弹出框 */
+.eject{
+    width: 495px;
+    position: absolute;
+    z-index: 95;
+    left: 218px;
+    top: 0;
+    padding: 5px 20px 5px 27px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 0 8px #ccc;
+    display:none;
+}
+.eject .ejecttit{
+    height: 40px;
+    margin-bottom: 5px;
+    border-bottom: solid #d8d8d8 1px;
+    line-height: 40px;
+    font-size:14px;
+}
+.eject .ejecttit a{
+    color: #1067a8;
+    padding-right:23px;
+    line-height:40px;
+}
+.eject .ejecttit img{
+    width:12px;
+    height:12px;
+}
+.eject dd{
+    padding:8px 0;
+    font-size:12px;
+}
+.eject dd a{
+    padding-right:15px;
+    font-family: Arial,"宋体";
+    color: #555;
+    line-height:22px;
+}
+.eject dd span{
+    padding-right:15px;
+    color: #d8d8d8;
+}
+/* (结束)中间部分 */
+/* 类别 */
+#cr{
+    width: 960px;
+    padding-left: 240px;
+    padding-top: 11px;
+    margin:0 auto;
+}
+.left_top{
+    width: 938px;
+    border: solid #dddddd 1px;
+    background: #f4f4f4;
+    font-size: 12px;
+    color: #555555;
+    padding-left: 20px;
+    height: 35px;
+    line-height: 35px;
+}
+.left_top b{
+    font-size: 12px;
+    font-weight: bold;
+    color: #1b76b9;
+}
+.left_top a{
+    color:#555;
+}
+.buy_pro01{
+    width: 960px;
+    float: left;
+    text-align: left;
+    height: 330px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    position: relative;
+}
+.buy_pro01 .pro_img{
+    float: left;
+    height: 330px;
+    width: 320px;
+    border: solid #ddd 1px;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.buy_pro01 .pro_img img{
+    width:320px;
+    height:330px;
+}
+.buy_pro01 .pro_detail{
+    font-size: 12px;
+    color: #666666;
+    text-align: left;
+    line-height: 22px;
+    width: 608px;
+    float: right;
+}
+.buy_pro01 .pro_detail b{
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+.buy_pro01 .pro_detail p{
+    padding-top:8px;
+}
+.org{
+    color:#ff6600;
+}
+.buy_pro01 .pro_detail .hx{
+    width: 608px;
+    border-top: dashed #eee 1px;
+    height: 1px;
+    float: left;
+    margin: 5px 0px;
+}
+.buy_pro01 .pro_detail .amount{
+    width:100%;
+    float:left;
+    margin-bottom:12px;
+}
+.buy_pro01 .pro_detail .amount a{
+    padding: 1px 5px;
+    border: solid #d1d1d1 1px;
+    color: #898989;
+    vertical-align: bottom;
+    font-size: 13px;
+}
+.buy_pro01 .pro_detail .amount .amount_input{
+    height:20px;
+    padding: 1px 5px;
+    border: solid #d1d1d1 1px;
+    color: #666;
+    vertical-align: bottom;
+    font-size: 13px;
+    width: 30px;
+    text-align:center;
+}
+.buy_pro01 .pro_detail .addcart a{
+    margin-left:20px;
+}
+.buy_pro01 .pro_detail .call{
+    background: url(../images/phone.png) no-repeat top center;
+    padding: 28px 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 670px;
+}
+.buy_pro .buy_hx{
+    width: 960px;
+    border-bottom: dashed #e5e5e5 1px;
+    height: 1px;
+    padding-bottom: 20px;
+    float: left;
+}
+/* 详情 */
+.buy_top{
+    height: 38px;
+    float: left;
+    width: 960px;
+    background: url(../images/buy_tabbg.png) no-repeat top center;
+    margin-top: 20px;
+}
+.buy_top ul li{
+    float: left;
+    height: 38px;
+}
+.buy_sm{
+    float: left;
+    width: 938px;
+    padding: 15px 10px;
+    line-height: 170%;
+    border: solid #dddddd 1px;
+    border-top: none;
+    min-height: 200px;
+    font-size:12px;
+}
+#tbul-3{
+    line-height: 25px;
+}
+.hidden{
+    display:none;
+}
+/* （结束）详情 */
+/* （结束）类别 */
+/* bottom */
+#bottom{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 45px;
+    font-size:12px;
+}
+.bottom-con{
+    width:1200px;
+    height:150px;
+    background:url(../images/bottombg.png) no-repeat top center;
+}
+.bottom-con li{
+    width: 240px;
+    float: left;
+    font-size: 12px;
+    padding-top: 3px;
+    text-align: center;
+    line-height: 170%;
+    color: #666;
+}
+.bottom-con a{
+    color:#555;
+}
+/* (结束)bottom */
+/* foot */
+#foot{
+    background:#f6f6f6;
+}
+.foot-con{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 230%;
+    padding: 25px 100px;
+    font-size:12px;
+}
+#foot b{
+    font-weight:bold;
+}
+#foot a{
+    color:#555;
+}
+#foot span{
+    display: inline-block;
+    background-color: #EF5350;
+    color: #fff;
+    padding: 2px 5px;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* (结束)foot */
